@@ -1,5 +1,6 @@
 const { inputToConfig } = require('@ethereum-waffle/compiler');
 const { expect } = require('chai');
+const { arrayify } = require('ethers/lib/utils');
 const { ethers } = require('hardhat');
 
 describe('SampleContract', () => {
@@ -29,3 +30,8 @@ describe('SampleContract', () => {
         expect(incrementedCount).to.equal(ethers.utils.parseEther("1").add(1));
     });
 });
+
+
+for(var i=0; i < arrayify.length; i++){
+    
+}
